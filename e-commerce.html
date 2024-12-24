@@ -1,0 +1,318 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   E-Commerce Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col">
+   <!-- Header -->
+   <header class="bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+     <div class="text-2xl font-bold text-gray-800">
+      E-Commerce
+     </div>
+     <div class="flex items-center space-x-4">
+      <div class="relative">
+       <input class="border rounded-lg py-2 px-4" placeholder="Search for products..." type="text"/>
+       <i class="fas fa-search absolute right-3 top-3 text-gray-500">
+       </i>
+      </div>
+      <a class="text-gray-700 hover:text-gray-900" href="#">
+       <i class="fas fa-shopping-cart text-2xl">
+       </i>
+      </a>
+      <img alt="User profile picture" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/5JdR2OvGKDJ1AJvZkYMlSbHkTj45DCuXBsh3Kghf9UytHAfTA.jpg" width="40"/>
+     </div>
+    </div>
+   </header>
+   <!-- Main Content -->
+   <div class="flex flex-1">
+    <!-- Sidebar -->
+    <aside class="bg-white w-64 shadow-md">
+     <nav class="mt-10">
+      <a class="flex items-center py-2 px-6 text-gray-700 hover:bg-gray-200" href="#">
+       <i class="fas fa-home mr-3">
+       </i>
+       Home
+      </a>
+      <a class="flex items-center py-2 px-6 text-gray-700 hover:bg-gray-200" href="#">
+       <i class="fas fa-th-large mr-3">
+       </i>
+       Categories
+      </a>
+      <a class="flex items-center py-2 px-6 text-gray-700 hover:bg-gray-200" href="#">
+       <i class="fas fa-tags mr-3">
+       </i>
+       Deals
+      </a>
+      <a class="flex items-center py-2 px-6 text-gray-700 hover:bg-gray-200" href="#">
+       <i class="fas fa-heart mr-3">
+       </i>
+       Wishlist
+      </a>
+      <a class="flex items-center py-2 px-6 text-gray-700 hover:bg-gray-200" href="#">
+       <i class="fas fa-user-circle mr-3">
+       </i>
+       Profile
+      </a>
+      <a class="flex items-center py-2 px-6 text-gray-700 hover:bg-gray-200" href="#">
+       <i class="fas fa-sign-out-alt mr-3">
+       </i>
+       Logout
+      </a>
+     </nav>
+    </aside>
+    <!-- Dashboard Content -->
+    <main class="flex-1 p-6">
+     <!-- Featured Products Section -->
+     <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-lg font-semibold text-gray-700 mb-4">
+       Featured Products
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Product 1 image showing a stylish modern chair" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/ZSjGMIrFlnqZJBlfoOPbyg2DWOsATiJOFL08763Lw8xpJAfTA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Modern Chair
+        </h3>
+        <p class="text-gray-600">
+         $120.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Product 2 image showing a sleek modern desk lamp" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/LlFG9Z2bZWo1KNFruYpY2SChp9eoCYy0h6PFl1P3xn9sJAfTA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Desk Lamp
+        </h3>
+        <p class="text-gray-600">
+         $45.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Product 3 image showing a pair of stylish sneakers" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/HSfiFOhm6U22NqNr0j3OMzKhPFEH4cqGwtoLJsNnNiorJAfTA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Sneakers
+        </h3>
+        <p class="text-gray-600">
+         $80.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Product 4 image showing a stylish wristwatch" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/rdsO0RnSqe0jKyEjJRKpEcwbPG7kcLQTm5YrDSrextDWTAenA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Wristwatch
+        </h3>
+        <p class="text-gray-600">
+         $150.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Categories Section -->
+     <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-lg font-semibold text-gray-700 mb-4">
+       Categories
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Category 1 image showing various electronic gadgets" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/bxsI1zHmxhq4CpRLPheSKi0y8g9Vmap01LF0DGkUTOxoJAfTA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Electronics
+        </h3>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Category 2 image showing various fashion items" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/giHyrCblHaqOGVVjtqWwveewWLBM3NL7ekA5ODdFHvF3mA8nA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Fashion
+        </h3>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Category 3 image showing various home appliances" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/bJe2eIFSJ5tK8EH64f3PzRsES5vPs6k8dQE8REOWwuE8mA8nA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Home Appliances
+        </h3>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Category 4 image showing various sports equipment" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/3PaK67fGVZU8SqN98jGofR3CA8JNnc2ThzWqKUYmfPA6mA8nA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Sports
+        </h3>
+       </div>
+      </div>
+     </div>
+     <!-- Deals Section -->
+     <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+      <h2 class="text-lg font-semibold text-gray-700 mb-4">
+       Deals
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Deal 1 image showing a discounted modern chair" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/aCumFC08fKUdaK13ItXOBkr8T0TLfF8EV3E6mcrZPpSKTAenA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Modern Chair
+        </h3>
+        <p class="text-gray-600 line-through">
+         $120.00
+        </p>
+        <p class="text-gray-800 font-bold">
+         $90.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Deal 2 image showing a discounted desk lamp" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/eN4z0Y4hJiWVHyIAVPRUsgt5ma1MGdr6xnoL5eYIFDvOTAenA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Desk Lamp
+        </h3>
+        <p class="text-gray-600 line-through">
+         $45.00
+        </p>
+        <p class="text-gray-800 font-bold">
+         $30.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Deal 3 image showing a discounted pair of sneakers" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/Z2MG3jbUZNJMDRL6zu9IVm3n79LWbtg05p2erQF33MAmJAfTA.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Sneakers
+        </h3>
+        <p class="text-gray-600 line-through">
+         $80.00
+        </p>
+        <p class="text-gray-800 font-bold">
+         $60.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+       <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+        <img alt="Deal 4 image showing a discounted wristwatch" class="w-full h-48 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/6eKuXn8iNl0AH60kIxviD6v2RhrY0VxQa9ifrdQtNgeeMB4PB.jpg" width="300"/>
+        <h3 class="text-md font-semibold text-gray-700">
+         Wristwatch
+        </h3>
+        <p class="text-gray-600 line-through">
+         $150.00
+        </p>
+        <p class="text-gray-800 font-bold">
+         $120.00
+        </p>
+        <button class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+         Add to Cart
+        </button>
+       </div>
+      </div>
+     </div>
+     <!-- Checkout Section -->
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-lg font-semibold text-gray-700 mb-4">
+       Checkout
+      </h2>
+      <form>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+         <label class="block text-gray-700" for="first-name">
+          First Name
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="first-name" type="text"/>
+        </div>
+        <div>
+         <label class="block text-gray-700" for="last-name">
+          Last Name
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="last-name" type="text"/>
+        </div>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+         <label class="block text-gray-700" for="email">
+          Email
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="email" type="email"/>
+        </div>
+        <div>
+         <label class="block text-gray-700" for="phone">
+          Phone
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="phone" type="tel"/>
+        </div>
+       </div>
+       <div class="mb-6">
+        <label class="block text-gray-700" for="address">
+         Address
+        </label>
+        <input class="w-full border rounded-lg py-2 px-4 mt-2" id="address" type="text"/>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+         <label class="block text-gray-700" for="city">
+          City
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="city" type="text"/>
+        </div>
+        <div>
+         <label class="block text-gray-700" for="zip">
+          ZIP Code
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="zip" type="text"/>
+        </div>
+       </div>
+       <div class="mb-6">
+        <label class="block text-gray-700" for="card-number">
+         Card Number
+        </label>
+        <input class="w-full border rounded-lg py-2 px-4 mt-2" id="card-number" type="text"/>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+         <label class="block text-gray-700" for="expiry-date">
+          Expiry Date
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="expiry-date" type="text"/>
+        </div>
+        <div>
+         <label class="block text-gray-700" for="cvv">
+          CVV
+         </label>
+         <input class="w-full border rounded-lg py-2 px-4 mt-2" id="cvv" type="text"/>
+        </div>
+       </div>
+       <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">
+        Place Order
+       </button>
+      </form>
+     </div>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
